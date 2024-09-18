@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,7 +47,7 @@
                           >Mobile Number</span
                         >
                       </label>
-                      <input
+                      <input id="phone-number"
                         type="text"
                         placeholder="Enter your number"
                         class="input bg-[#F4F5F7] rounded-[2rem] placeholder-[#080808] placeholder-opacity-40"
@@ -60,15 +60,15 @@
                           >4 Digit Pin</span
                         >
                       </label>
-                      <input
+                      <input 
                         type="password"
                         placeholder="Enter 4 Digit Pin"
                         class="input bg-[#F4F5F7] rounded-[2rem] placeholder-[#080808] placeholder-opacity-40"
-                        required
+                        required autocomplete="off"
                       />
                     </div>
                     <div class="form-control mt-6">
-                      <button
+                      <button id="login-btn"
                         class="btn btn-primary bg-[#0874F2] border-none rounded-[2rem] text-white text-xl"
                       >
                         Login
@@ -82,5 +82,8 @@
         </div>
       </div>
     </main>
+
+
+    <script src="js/login.js"></script>
   </body>
 </html>
