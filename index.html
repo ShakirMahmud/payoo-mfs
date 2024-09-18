@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Payoo MFS</title>
+    <style>
+      .outfit {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="outfit">
+    <main class="flex justify-center items-center h-screen">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3">
+            <!-- Login Section -->
+            <div class="relative w-full px-6">
+              <img
+                src="./assets/rectangle.png"
+                alt=""
+                class="absolute -top-[25%] left-[12%]"
+              />
+              <img src="./assets/Group.png" alt="" class="absolute -top-[15%] left-[45%]" />
+              <div
+                class="hero-content flex-col lg:flex-row-reverse px-0"
+              >
+                <div class="card bg-base-100 w-full shrink-0 shadow-xl">
+                  <form class="card-body w-full px-8">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text font-[500] text-base"
+                          >Mobile Number</span
+                        >
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Enter your number"
+                        class="input bg-[#F4F5F7] rounded-[2rem] placeholder-[#080808] placeholder-opacity-40"
+                        required
+                      />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text font-[500] text-base"
+                          >4 Digit Pin</span
+                        >
+                      </label>
+                      <input
+                        type="password"
+                        placeholder="Enter 4 Digit Pin"
+                        class="input bg-[#F4F5F7] rounded-[2rem] placeholder-[#080808] placeholder-opacity-40"
+                        required
+                      />
+                    </div>
+                    <div class="form-control mt-6">
+                      <button
+                        class="btn btn-primary bg-[#0874F2] border-none rounded-[2rem] text-white text-xl"
+                      >
+                        Login
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
