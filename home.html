@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Payoo Homepage</title>
+    <style>
+      .outfit {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="flex justify-center items-center h-screen">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3 relative">
+            <div class="absolute top-0">
+                <!-- Available Balance -->
+                <div class="bg-white w-full px-6 rounded-b-3xl pt-8">
+                    <div class="flex justify-between">
+                        <div class="flex">
+                          <img src="./assets/logo.png" alt="" />
+                          <div>
+                            <h2 class="font-[800] text-[#080808E6] text-xl">$<span>45000</span></h2>
+                            <p class="text-[#08080880] text-sm font-[400]">Available Balance</p>
+                          </div>
+                        </div>
+                        <button>
+                          <img src="./assets/logout.png" alt="" />
+                        </button>
+                      </div>
+                      <div class="divider"></div>
+                      <!-- Welcome to Payooo! -->
+                      <div class=>
+                        <img src="./assets/welcome.png" alt="">
+                        <p class="text-[#08080880] mt-3">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                        <div class="grid grid-cols-3 gap-4 mt-6 pb-6">
+                             <button id="addMoney-div" class="border rounded-2xl border-[#0808081A] flex items-center justify-center px-3 py-5">
+                                <img src="./assets/addMoney.png" alt="">
+                             </button>
+                             <button class="border  rounded-2xl border-[#0808081A] flex items-center justify-center px-3 py-5">
+                                <img src="./assets/cashOut.png" alt="">
+                             </button>
+                             <button class="border  rounded-2xl border-[#0808081A] flex items-center justify-center px-3 py-5">
+                                <img src="./assets/transferMoney.png" alt="">
+                             </button>
+                             <button class="border  rounded-2xl border-[#0808081A] flex items-center justify-center px-3 py-5">
+                                <img src="./assets/getBonus.png" alt="">
+                             </button>
+                             <button class="border  rounded-2xl border-[#0808081A] flex items-center justify-center px-3 py-5">
+                                <img src="./assets/payBill.png" alt="">
+                             </button>
+                             <button class="border  rounded-2xl border-[#0808081A] flex items-center justify-center px-3 py-5">
+                                <img src="./assets/transactions.png" alt="">
+                             </button>
+                        </div>
+                      </div>
+                </div>
+                <!-- Latest Payment  -->
+                 <div class="px-6 mt-8 w-full">
+                    <div class=" flex items-center  justify-between ">
+                        <h2 class="text-[#080808E6] text-xl font-[600]">Latest Payment</h2>
+                        <p class="text-[#08080880] text-sm">View All</p>
+                     </div>
+                     <div class="bg-white flex justify-between items-center w-full px-4 py-3 rounded-xl mt-4">
+                        <div class="flex gap-2">
+                            <img class="" src="./assets/wallet.png" alt="">
+                            <div class="flex flex-col justify-between">
+                                <h3 class="text-base font-[600] text-[#080808B3]">Electricity Bill</h3>
+                                <p class="text-sm font-[400] text-[#080808B3]">Today 01:44 AM</p>
+                            </div>
+                        </div>
+                        <img class="h-[100%]" src="./assets/frame.png" alt="">
+                     </div>
+                     <div class="bg-white flex justify-between items-center w-full px-4 py-3 rounded-xl mt-4">
+                        <div class="flex gap-2">
+                            <img class="" src="./assets/wallet.png" alt="">
+                            <div class="flex flex-col justify-between">
+                                <h3 class="text-base font-[600] text-[#080808B3]">Electricity Bill</h3>
+                                <p class="text-sm font-[400] text-[#080808B3]">Today 01:44 AM</p>
+                            </div>
+                        </div>
+                        <img class="h-[100%]" src="./assets/frame.png" alt="">
+                     </div>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/home.js"></script>
+  </body>
+</html>

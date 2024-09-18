@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Add Money</title>
+    <style>
+      .outfit {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="flex justify-center items-center h-screen">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3 relative">
+            <div class="absolute top-0">
+              <!-- Available Balance -->
+              <div class="bg-white w-full px-6 rounded-b-3xl pt-5">
+                <div class="flex justify-between">
+                  <div class="flex">
+                    <img src="./assets/logo.png" alt="" />
+                    <div>
+                      <h2 class="font-[800] text-[#080808E6] text-xl">
+                        $<span>45000</span>
+                      </h2>
+                      <p class="text-[#08080880] text-sm font-[400]">
+                        Available Balance
+                      </p>
+                    </div>
+                  </div>
+                  <button>
+                    <img src="./assets/logout.png" alt="" />
+                  </button>
+                </div>
+                <div class="divider my-1"></div>
+                <!-- Welcome to Payooo! -->
+                <div>
+                  <img src="./assets/welcome.png" alt="" />
+                  <p class="text-[#08080880] mt-2">
+                    Enjoy easy and convenient financial services with us.
+                    Cashout charge is low and
+                  </p>
+                  <div class="grid grid-cols-3 gap-2 mt-2 pb-2">
+                    <button
+                      id="addMoney-btn"
+                      class="border rounded-2xl border-[#0808081A] flex items-center justify-center px-1 py-2"
+                    >
+                      <img src="./assets/addMoney.png" alt="" />
+                    </button>
+                    <button
+                      class="border rounded-2xl border-[#0808081A] flex items-center justify-center px-1 py-2"
+                    >
+                      <img src="./assets/cashOut.png" alt="" />
+                    </button>
+                    <button
+                      class="border rounded-2xl border-[#0808081A] flex items-center justify-center px-1 py-2"
+                    >
+                      <img src="./assets/transferMoney.png" alt="" />
+                    </button>
+                    <button
+                      class="border rounded-2xl border-[#0808081A] flex items-center justify-center px-1 py-2"
+                    >
+                      <img src="./assets/getBonus.png" alt="" />
+                    </button>
+                    <button
+                      class="border rounded-2xl border-[#0808081A] flex items-center justify-center px-1 py-2"
+                    >
+                      <img src="./assets/payBill.png" alt="" />
+                    </button>
+                    <button
+                      class="border rounded-2xl border-[#0808081A] flex items-center justify-center px-1 py-2"
+                    >
+                      <img src="./assets/transactions.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Money -->
+              <div class="mt-2 w-full">
+                <h2 class="text-[#080808E6] text-xl font-[600] px-6">Add Money</h2>
+                <div class="w-full ">
+                    <div
+                      class="hero-content flex-col lg:flex-row-reverse px-0"
+                    >
+                      <div class="card bg-base-100 w-full shrink-0 shadow-xl">
+                        <form class="card-body w-full pt-1 pb-10 px-6">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-[500] text-sm "
+                                >Bank Account Number</span
+                              >
+                            </label>
+                            <input id="phone-number"
+                              type="text"
+                              placeholder="Enter 11 digit account number"
+                              class="p-2 px-4 bg-[#F4F5F7] rounded-[2rem] placeholder-[#080808] placeholder-opacity-40"
+                              required
+                            />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-[500] text-sm"
+                                >Amount to Add</span
+                              >
+                            </label>
+                            <input id="pin-number"
+                              type="text"
+                              placeholder="Add Amount to Add"
+                              class="p-2 px-4 bg-[#F4F5F7] rounded-[2rem] placeholder-[#080808] placeholder-opacity-40"
+                              required 
+                            />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-[500] text-sm"
+                                >Pin Number</span
+                              >
+                            </label>
+                            <input id="pin-number"
+                              type="password"
+                              placeholder="Enter 4 digit pin number"
+                              class="p-2 px-4 bg-[#F4F5F7] rounded-[2rem] placeholder-[#080808] placeholder-opacity-40"
+                              required autocomplete="off"
+                            />
+                          </div>
+                          <div class="form-control mt-4">
+                            <button id="btn-addMoney" 
+                              class="btn btn-primary bg-[#0874F2] border-none rounded-[2rem] text-white text-xl"
+                            >
+                              Add Money
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/addMoney.js"></script>
+  </body>
+</html>
