@@ -14,7 +14,7 @@ document.getElementById('login-btn').addEventListener('click',function(event){
     if(phoneNumber === '0' && pinNumber === '0'){
         console.log('correct number and pin');
         //! Step 5: Allow User to use the website
-        window.location.href = '/home.html'
+        window.location.href = 'home.html'
     }else{
         alert('Wrong Mobile or Pin Number.');
     }
